@@ -9,7 +9,7 @@ private:
     float y;
 public:
     int Enter_Points() {// элементы вектора
-        cout << " Enter x:";
+        cout << " Enter x: ";
         cin >> x;
         cout << "\n" << "Enter y: ";
         cin >> y;
@@ -17,8 +17,12 @@ public:
         return 0;
     }
 
-    float Get_Points() {
-        return x, y;
+    float Get_Point_X() {
+        return (x);
+    }
+
+    float Get_Point_Y() {
+        return (y);
     }
 
     double Get_LenVector() {
@@ -32,7 +36,8 @@ int main()
 
     MyClass temp;// объявляю класс для 
     temp.Enter_Points();
-    cout << "Points: " << temp.Get_Points();
+    cout << "Points: " << temp.Get_Point_X() << ", ";
+    cout << temp.Get_Point_Y();
     cout << "\nVector Size :" << temp.Get_LenVector() << endl;// вывожу модуль вектора
 
     system("pause");
